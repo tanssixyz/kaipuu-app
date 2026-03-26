@@ -1,0 +1,14 @@
+[
+  {"type":"constructor","inputs":[],"stateMutability":"nonpayable"},
+  {"type":"function","name":"mark","inputs":[],"outputs":[{"name":"","type":"uint256"}],"stateMutability":"nonpayable"},
+  {"type":"function","name":"mint","inputs":[{"name":"markId","type":"uint256"}],"outputs":[{"name":"","type":"uint256"}],"stateMutability":"nonpayable"},
+  {"type":"function","name":"marks","inputs":[{"name":"","type":"uint256"}],"outputs":[{"name":"marker","type":"address"},{"name":"timestamp","type":"uint256"},{"name":"minted","type":"bool"}],"stateMutability":"view"},
+  {"type":"function","name":"colourOf","inputs":[{"name":"markId","type":"uint256"}],"outputs":[{"name":"h","type":"uint256"},{"name":"s","type":"uint256"},{"name":"l","type":"uint256"}],"stateMutability":"view"},
+  {"type":"function","name":"nextMarkId","inputs":[],"outputs":[{"name":"","type":"uint256"}],"stateMutability":"view"},
+  {"type":"function","name":"tokenURI","inputs":[{"name":"tokenId","type":"uint256"}],"outputs":[{"name":"","type":"string"}],"stateMutability":"view"},
+  {"type":"function","name":"ownerOf","inputs":[{"name":"tokenId","type":"uint256"}],"outputs":[{"name":"","type":"address"}],"stateMutability":"view"},
+  {"type":"function","name":"balanceOf","inputs":[{"name":"owner","type":"address"}],"outputs":[{"name":"","type":"uint256"}],"stateMutability":"view"},
+  {"type":"function","name":"transferFrom","inputs":[{"name":"","type":"address"},{"name":"","type":"address"},{"name":"","type":"uint256"}],"outputs":[],"stateMutability":"pure"},
+  {"type":"event","name":"Marked","inputs":[{"name":"id","type":"uint256","indexed":true},{"name":"marker","type":"address","indexed":true},{"name":"timestamp","type":"uint256","indexed":false}],"anonymous":false},
+  {"type":"event","name":"KaipuuMinted","inputs":[{"name":"markId","type":"uint256","indexed":true},{"name":"marker","type":"address","indexed":true}],"anonymous":false}
+]
